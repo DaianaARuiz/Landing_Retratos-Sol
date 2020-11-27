@@ -9,25 +9,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>RetratosSol</title>
-
-	<!-- Asociando cosas externas -->
-	<link rel="stylesheet" href="estilos.css">
-
 	<!-- Tipografias -->
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
-		
-	</head>
+	<!-- Estilos -->
+	<link rel="stylesheet" href="estilos.css">
+</head>
 <body>
-	<!-- scripts -->
-	<script src="https://kit.fontawesome.com/601bc41129.js" crossorigin="anonymous"></script>
-
-
-	
 	<!-- Menu de navegacion -->
 	<header id="header">
-		
-			<div class="menu">
-				
+			<div class="menu">	
 				<div class="logo-box">
 					<i id="pincel" class="fas fa-pencil-alt"></i>
 					<h1><a href="#" class="logo">RetratosSol</a></h1>
@@ -54,10 +44,8 @@
 								</div>
 							</ul>
 				</nav>
-
 			</div>
-		<!-- Fin de menu de navegacion -->
-		
+		<!-- Fin de menu de navegacion -->	
 		<!-- IMG header -->
 		<div class="img-header">
 			<div class="welcome">
@@ -67,8 +55,8 @@
 
 			</div>
 		</div>
-	
 	</header>	
+	
 	<main>
 		<!-- portafolio -->
 		<section id="portafolio">
@@ -110,7 +98,6 @@
 				<h3>Tu foto convertida en un regalo único y especial</h3>
 			</div>
 
-
 			<div class="container-servicios">
 				<div class="contenedor-retratoNegro">
 					
@@ -138,8 +125,6 @@
 				</div>
 			</div>
 		</section>
-
-
 		<!-- pasos a seguir -->
 		<section class="instrucciones" id="instrucciones">
 			<div class="instrucciones-titulo">
@@ -147,8 +132,7 @@
 				<hr>
 			</div>
 
-			<div class="box-instrucciones">
-				
+			<div class="box-instrucciones">		
 				<!-- primer paso -->
 				<div class="card-instrucciones">
 					<div class="card-img"> 
@@ -173,7 +157,6 @@
 					</div>
 				</div>
 
-
 				<!-- tercer paso -->
 				<div class="card-instrucciones">
 					<div class="card-img"> 
@@ -185,8 +168,6 @@
 						<p>Una vez dado el OK a la obra, te haré el envío de la forma que acordamos.</p>
 					</div>
 				</div>
-		
-
 		</section>
 		
 		<section class="contacto" id="contacto ">
@@ -205,30 +186,25 @@
 					</a>	
 			</div>
 		</div>
-
-				
+			
 				<div class="ejZcontacto">
 					<div class="contacto-contenido">
 					
 						<div class="formulario-contenido">
 							<form action="procesar.php" method="POST">
-								<label form="nombre">
-								Nombre: <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">	
-								</label>
+								<label form="nombre">Nombre:</label>
+								 <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">	
+								<br>
+								<label form="email">Email:</label>
+								 <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
+								
 								<br>
 
-								<label form="email">
-								Email: <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
-								</label>
-								<br>
-
-								<label form="mensaje">
-								Mensaje: 
+								<label form="mensaje">Mensaje: </label>
 								<textarea name="mensaje" id="mensaje" autofocus required placeholder="¡Envíame tu consulta!"></textarea>
-								</label form="envio">
 								<br>
 								<input type="submit" value="Enviar" name="enviar" id="envio">
-								
+		
 								<div class="mensaje-form">
 									<p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
 								</div>
@@ -239,21 +215,12 @@
 				</div> 
 			</div>
 		</section>
-	
 	</main>
-
 	<footer>
 		<p> Retratos Sol - 2020 | Todos los derechos reservados.</p>
-			
-
-              <!--   <i class="far fa-envelope"></i> 			
-
-				<a href="https://www.instagram.com/kndsol__/" class="ig" target="_blank">
-					<i class="fab fa-instagram"></i>
-					@kndsol__
-				</a>
- -->
 	</footer>
-	
+	<!-- scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="https://kit.fontawesome.com/601bc41129.js" crossorigin="anonymous"></script>
 </body>
 </html>
