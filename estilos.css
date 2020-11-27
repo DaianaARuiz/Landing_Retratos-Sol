@@ -1,0 +1,551 @@
+/*variables en css
+*/
+
+
+:root{ 
+--violeta:#21243d;
+--rosa:#ed6663;
+--blanco:#f7f7f7;
+--azul:#0f4c81;
+--title:35px;
+--text:19px;
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredericka+the+Great&display=swap');
+
+	
+
+
+ *{
+ 	margin:0px;
+ 	padding:0;
+ 	box-sizing: border-box; /*para que cuando se utilice un margin o un padding los elementos no crezcan, sino que los elementos hijos disminuyen su tamaño*/
+}
+ 
+ body{
+ 	background: var(--blanco);
+ /*	overflow: hidden;*/ /*para que no haga la linea horizontal en ejeX*/
+    font-family: 'Raleway', sans-serif;
+ }
+
+ /*Menu de navegacion*/
+ /*#header{
+ 	position:relative;*/
+ 	/*width:100%;
+ }*/
+
+ .menu{
+ 	position:fixed;
+ 
+ 	width:100%;
+ 	height:60px;
+ 	background: white;
+ 	color: var(--violeta);
+
+ 	display:flex;
+ 	justify-content: space-between;
+ 	align-items: center;
+ 	z-index:999;
+ }
+
+.logo-box {
+	width: 30%;
+	height: 60px;
+	margin-left: 2%;
+	display:flex;
+}
+
+h1 a{
+color:var(--violeta);
+/* font-family: 'Fredericka the Great', cursive; */
+font-family: 'Rock Salt', cursive;
+text-decoration: none;
+}
+
+
+.nav__ul{
+	list-style: none;
+	width:70%;
+	height:60px;
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.nav__li a {
+	text-decoration: none;
+	font-size:18px;
+	font-family: 'Amatic SC', cursive;
+ 	color:var(--violeta);
+ 	margin: 0px 10px;
+    padding:8px;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+/*.lists a .active {
+	background-color: var(--violeta);
+	color: var(--rosa) ;
+}*/
+.nav__li a:hover{
+	background-color: var(--violeta);
+	color: white ;
+}
+
+
+.nav__responsive-ul{
+	display: none; }
+
+
+
+
+
+
+
+/*IMG HEADER*/
+.img-header {
+	width:100%;
+	height: 40em;
+	position: relative;
+	
+	background-image:url(imagenes/pinceles.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.welcome{
+
+	position:absolute;
+	top:50px;
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome h1{
+	font: 3em Balsamiq Sans, cursive;
+	color:white;
+}
+
+.welcome p {
+	font:1.5em Balsamiq Sans, cursive;
+	color:white;
+	padding-bottom: 20px	
+}
+.welcome #boton-abajo{
+	width:10%;
+	height:40px;
+	padding:5px;
+	background-color: var(--violeta);
+	color:white;
+	font: bold 16px Balsamiq Sans, cursive;
+
+	padding:6px;
+    border-radius: 24px;
+    transition: 0.3s;
+}
+
+.welcome #boton-abajo:hover{
+	background-color: var(--rosa)
+}
+
+/*PORTAFOLIO*/
+.container-titulo{
+ 	border:2px solid var(--violeta);
+    padding:10px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+.container-titulo h2{
+   	font:bold 1.3em 'Fredericka the Great', cursive;
+    color: var(--violeta);
+    }
+
+
+
+
+img{
+	width:200px;
+}
+
+#portafolio{
+	display: flex;
+}
+
+
+
+/*SERVICIOS*/
+
+.servicios{
+	width: 100%;
+	height: 30em;
+}
+
+.servicios-titulos{
+	margin-top: 130px;
+	height: 100px;
+	text-align: center;
+	font-size: 26px;
+
+	display: flex;
+	flex-direction: column;
+}
+
+
+.container-servicios{
+	width: 100%;
+	height: 20em;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.contenedor-retratoNegro, .contenedor-retratoColor{
+	width: 45%;
+	height: 300px;
+	border:1.5px dashed var(--violeta);
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	padding: 10px;
+	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
+	transition: transform 0.1s ease-in-out, box-shadow 0.1s;
+}
+
+.contenedor-retratoNegro:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+.contenedor-retratoColor:hover {
+	transform: translateY(-0.5rem) scale(1.0125);
+	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+}
+
+/*PASOS A SEGUIR*/
+
+.instrucciones{
+	width: 100%;
+	height: 30em;
+} 
+
+.instrucciones-titulo {
+ 	border:2px solid var(--violeta);
+    padding:10px;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+}
+.instrucciones-titulo h4{
+   	font:bold 1.3em 'Fredericka the Great', cursive;
+    color: var(--violeta);
+    }
+
+.box-instrucciones{
+	width:100%;
+	margin-top:40px;
+	
+	display:flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.card-instrucciones{
+	width:30%;
+	height:250px;
+	padding:10px;
+
+	color: var(--violeta);
+	
+	border: 3px solid var(--rosa);
+	border-radius: 24px;
+	
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	align-items: space-between;
+
+	position: relative;
+}
+
+.card-instrucciones:hover{
+	background-color: var(--violeta);
+	color: var(--rosa);
+	transition:0.5s;
+}
+
+.instrucciones-text{
+	padding:15px;
+}
+
+.instrucciones-text h6 {
+	font:bold 1.3em 'Fredericka the Great', cursive;
+	text-align:center;
+	margin-bottom:30px;
+	margin-left:0;
+}
+
+.card-img {
+	width: 60px;
+ 	height: 60px;
+ 	font-size: 40px;
+ 	padding:5px;
+
+	text-align: center;
+	color:white;
+	background-color: var(--violeta);
+	
+	border-radius: 50%;
+	-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+ 	box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+ 	text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+
+ 	position: absolute;
+	left: -30px;
+	top: 7.5px;
+}
+
+.card-img:hover{
+	background-color: var(--rosa);
+}
+
+
+
+/* CONTACTO*/
+
+.contacto{
+	width:100%;
+	height: 40em;
+	
+	background-image:url(imagenes/pinceles.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+
+}
+
+.contenedor-contacto-izq{
+	width: 40%;
+	height: 40em;
+
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+
+	position: relative;
+
+}
+
+.titulo-contacto{
+	align-self: flex-start;
+	width: 40%;
+	height: 3.5em;
+
+	position: absolute;
+	left:50px;
+}
+
+.titulo-contacto h6 {
+	width: 100%;
+	font: 3em Balsamiq Sans, cursive;
+	color:white;
+	text-align: center;
+	margin: 20px 0;
+}
+
+.contacto-redesSociales{
+	width: 40%;
+	height: 300px;
+
+	display: flex;
+	flex-direction: column;
+
+	position: absolute;
+	bottom:200px;
+	left:20px;
+}
+.contacto-redesSociales i{
+	width: 60px;
+ 	height: 60px;
+ 	font-size: 40px;
+ 	line-height: 1.6;
+
+ 	margin-bottom:30px;
+
+	text-align: center;
+	color:white;
+	background-color: var(--rosa);
+	
+	border-radius: 50%;
+	-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+ 	box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
+
+}
+
+.contacto-redesSociales i:hover{ background: var(--violeta);}
+
+.contacto-contenido{
+    width: 90%;
+    height: 500px;
+    margin:auto;
+    background: #fff;
+    padding:30px;
+    border-radius: 50px;
+    border: 1.5px solid var(--violeta);
+
+}
+
+.formulario-contenido {
+	height: 500px;
+	width: 100%;
+}
+
+form{height: 500px}
+
+label{
+	font: bold 18px Balsamiq Sans, cursive;
+ 	color:var(--violeta);
+ 	margin: 30px 0px 10px 150px;} 
+
+
+input{
+	display: block;
+	color:var(--violeta);
+	width: 90%;
+    height: 40px;
+    margin:auto;
+    border-radius: 24px;
+    outline: none;
+    border:1.5px solid var(--violeta);
+    text-align: center;
+    font-size: 18px;
+    color: var(--black);
+	}
+
+textarea{
+	resize: none;
+	width:90%;
+	height: 150px;
+	margin:auto 15px;
+    border-radius: 24px;
+    border:1.5px solid var(--violeta);
+    outline:none;
+}
+
+textarea::placeholder{
+	font: 18px Balsamiq Sans, cursive;
+	padding: 0 15px;
+}
+
+input::placeholder{
+	font: 18px Balsamiq Sans, cursive;
+	padding: 10px;
+}
+
+.mensaje-form{
+	text-align: center;
+	margin-top: 15px;
+}
+
+#envio{
+	width:40%;
+	height:40px;
+	padding:5px;
+	background-color: var(--violeta);
+	color:white;
+	font: bold 16px Balsamiq Sans, cursive;
+
+	padding:6px;
+    border-radius: 24px;
+}
+
+#envio:hover{
+	background-color: var(--rosa);
+	color:white;
+	transition: 0.3s;
+}
+
+
+
+
+/*FOOTER*/
+footer{
+	width:100%;
+	height: 40px;
+	border-top:2px solid black;
+
+	font:italic 16px Arial;
+	color:black;
+	line-height: 2.5;
+	background: var(--violeta);
+	background-opacity: 0.2;
+
+	display: flex;
+	justify-content: center;
+
+}
+
+
+/*RESPONSIVE*/
+
+/*@media only screen and (max-width:1000px){
+
+	.menu{display: block;}
+
+	.nav__ul {display: none;}
+
+	.nav__responsive-ul{
+		display: block;
+		
+		height: 300px;
+		width: 40%;
+		background: pink;
+
+	}
+
+	.nav__responsive-ul i {
+	padding:7px 20px;
+	font-size: 30px;
+	color:black;
+	box-sizing: border-box;
+
+	float:right;
+	}
+
+	.nav__responsive-li { list-style-type: none;}
+	
+	.nav__responsive-li a {
+	text-decoration: none;
+	font: bold 18px Balsamiq Sans, cursive;
+ 	color:var(--violeta);
+	}
+
+	.nav__li-container{
+		position: relative;
+		top:100%;}
+
+	}
+
+}*/
