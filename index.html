@@ -8,7 +8,7 @@
 	<meta name="description" content="venta de retratos personalizados">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>RetratosSol</title>
+	<title>RetratoSol</title>
 	<!-- Tipografias -->
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
 	<!-- Estilos -->
@@ -19,9 +19,7 @@
 	<header id="header">
 			<div class="menu">	
 				<div class="logo-box">
-					<i id="pincel" class="fas fa-pencil-alt"></i>
-					<h1><a href="#" class="logo">RetratosSol</a></h1>
-					<!-- <i class="fas fa-bars"></i> -->
+					<h1><a href="#" class="logo">RetratoSol</a></h1>
 				</div>
 
 				<nav class="nav">
@@ -33,7 +31,7 @@
 							<li class="nav__li"><a href="#contacto">Contacto</a></li>
 						</ul>
 
-							<ul class="nav__responsive-ul">
+							<!-- <ul class="nav__responsive-ul">
 								<i class="fas fa-bars"></i>
 								<div class="nav__li-container">
 									<li class="nav__responsive-li"><a href="#" class="activo">Inicio</a></li>
@@ -42,17 +40,19 @@
 									<li class="nav__responsive-li"><a href="#instrucciones">Consultas</a></li>
 									<li class="nav__responsive-li"><a href="#contacto">Contacto</a></li>
 								</div>
-							</ul>
+							</ul> -->
 				</nav>
 			</div>
 		<!-- Fin de menu de navegacion -->	
 		<!-- IMG header -->
 		<div class="img-header">
 			<div class="welcome">
-				<h1>Bienvenidos a RetratosSol </h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque </p>
-				<button id="boton-abajo">Ver abajo</button>
-
+				<h1>Bienvenidos a RetratoSol </h1>
+				<p>Retratos y cuadros por encargo</p>
+				<div class="welcome__btns">
+					<button >Contactanos</button>
+					<button>Ver Retratos</button>
+				</div>
 			</div>
 		</div>
 	</header>	
@@ -60,34 +60,50 @@
 	<main>
 		<!-- portafolio -->
 		<section id="portafolio">
-			<div class="deg-background">
-				<div class="ejeZportafolio">
-				<!-- esta clase va a contener todo el contenido de las imagenes y el titular, porque va a haber un bug si no lo pongo con el background -->
+
 					<div class="container-titulo"> 
 						<h2>Nuestros Trabajos</h2>
 					</div>
 
 					<div class="container-imgport">
 						<!-- <img src="imagenes/0.jpg" alt="retrato0"> -->
-						<img src="imagenes/2.jpg" alt="retrato2">
-						<img src="imagenes/3.jpg" alt="retrato3">
-						<!-- <img src="imagenes/4.jpg" alt="retrato4"> -->
-						<img src="imagenes/1.jpg" alt="retrato1">
-						<img src="imagenes/7.jpg" alt="retrato7">
-						<img src="imagenes/8.jpg" alt="retrato8">
-						<img src="imagenes/6.jpg" alt="retrato6">
-						<img src="imagenes/10.jpg" alt="retrato10">
-						<img src="imagenes/11.jpg" alt="retrato11">
-						<img src="imagenes/12.jpg" alt="retrato12">
-						<img src="imagenes/13.jpg" alt="retrato13">
-						<img src="imagenes/14.jpg" alt="retrato14">
-						<img src="imagenes/15.jpg" alt="retrato15">
-						<!-- <img src="imagenes/16.jpg" alt="retrato16"> -->
-						<img src="imagenes/17.jpg" alt="retrato17">
-						<img src="imagenes/18.jpg" alt="retrato18">
+						<div class="container-img">
+							<img src="imagenes/2.jpg" alt="retrato2">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/3.jpg" alt="retrato3">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/1.jpg" alt="retrato1">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/7.jpg" alt="retrato7">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/8.jpg" alt="retrato8">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/6.jpg" alt="retrato6">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/10.jpg" alt="retrato10">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/11.jpg" alt="retrato11">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/12.jpg" alt="retrato12">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/14.jpg" alt="retrato14">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/17.jpg" alt="retrato17">
+						</div>
+						<div class="container-img">
+							<img src="imagenes/15.jpg" alt="retrato15">
+						</div>
 					</div>
-				</div>
-			</div>
 		</section>
 
 		<!-- Servicios -->
@@ -171,53 +187,41 @@
 		</section>
 		
 		<section class="contacto" id="contacto ">
-			<div class="contenedor-contacto-izq">
-				<div class="titulo-contacto">
-					<h6>Contacto</h6>
-				</div>
-			
-
-				<div class="contacto-redesSociales">
-				  	<i class="far fa-envelope"></i> 			
-
-					<a href="https://www.instagram.com/kndsol__/" class="ig" target="_blank">
-						<i class="fab fa-instagram"></i>
-						@kndsol__
-					</a>	
+			<div class="titulo-contacto">
+				<h6>Contacto</h6>
+				<p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
 			</div>
-		</div>
-			
-				<div class="ejZcontacto">
-					<div class="contacto-contenido">
-					
-						<div class="formulario-contenido">
-							<form action="procesar.php" method="POST">
-								<label form="nombre">Nombre:</label>
-								 <input type="text" name="nombre" placeholder="Escriba aquí su nombre" id="nombre" maxlength="15" required autofocus autocomplete="on">	
-								<br>
-								<label form="email">Email:</label>
-								 <input type="email" name="email" placeholder="example@gmail.com" id="email" required autofocus autocomplete="on">	
-								
-								<br>
-
-								<label form="mensaje">Mensaje: </label>
-								<textarea name="mensaje" id="mensaje" autofocus required placeholder="¡Envíame tu consulta!"></textarea>
-								<br>
-								<input type="submit" value="Enviar" name="enviar" id="envio">
-		
-								<div class="mensaje-form">
-									<p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
-								</div>
-							
-							</form>
-						</div>
+			<!-- <div class="mensaje-form">
+				<p>Escríbenos un mensaje, con gusto te responderemos a la brevedad </p>
+			</div> -->
+			<div class="contacto-contenido">
+				<div class="contacto-redesSociales">
+					<div>
+						<i class="far fa-envelope"></i> 
+						candelalisouski@gmail.com
 					</div>
-				</div> 
+					<div>
+						<a href="https://www.instagram.com/kndsol__/" class="ig" target="_blank">
+							<i class="fab fa-instagram"></i>
+								@kndsol__
+						</a>	
+					</div>
+					<div><i class="fas fa-map-marker-alt"></i>Don Torcuato, Buenos Aires</div>		
+					
+				</div>
+				<div class="container-form">
+					<form action="procesar.php" method="POST" class="form">
+						<input class="input"  type="text" name="nombre" id="nombre" placeholder="Nombre">
+						<input class="input"  type="email" name="email" id="email" placeholder="Email">
+						<textarea  class="input" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje"></textarea>
+						<input class="input"  type="submit" value="Enviar">
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer>
-		<p> Retratos Sol - 2020 | Todos los derechos reservados.</p>
+		<p> Retratos Sol - 2020 | Pagina realizada por Ruiz Daiana</p>
 	</footer>
 	<!-- scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

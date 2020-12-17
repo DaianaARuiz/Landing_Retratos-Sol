@@ -7,33 +7,28 @@
 --rosa:#ed6663;
 --blanco:#f7f7f7;
 --azul:#0f4c81;
---title:35px;
---text:19px;
- }
+}
+
+:root{
+	--title:35px;
+	--text:19px;
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Fredericka+the+Great&display=swap');
-
-	
 
 
  *{
  	margin:0px;
  	padding:0;
- 	box-sizing: border-box; /*para que cuando se utilice un margin o un padding los elementos no crezcan, sino que los elementos hijos disminuyen su tamaño*/
+ 	box-sizing: border-box; 
 }
  
  body{
  	background: var(--blanco);
- /*	overflow: hidden;*/ /*para que no haga la linea horizontal en ejeX*/
     font-family: 'Raleway', sans-serif;
  }
 
- /*Menu de navegacion*/
- /*#header{
- 	position:relative;*/
- 	/*width:100%;
- }*/
 
  .menu{
  	position:fixed;
@@ -58,7 +53,6 @@
 
 h1 a{
 color:var(--violeta);
-/* font-family: 'Fredericka the Great', cursive; */
 font-family: 'Rock Salt', cursive;
 text-decoration: none;
 }
@@ -84,18 +78,19 @@ text-decoration: none;
     transition: 0.3s;
 }
 
-/*.lists a .active {
-	background-color: var(--violeta);
-	color: var(--rosa) ;
-}*/
 .nav__li a:hover{
 	background-color: var(--violeta);
 	color: white ;
 }
 
-
 .nav__responsive-ul{
 	display: none; }
+
+
+
+
+
+
 
 
 
@@ -132,7 +127,9 @@ text-decoration: none;
 
 .welcome h1{
 	font: 3em Balsamiq Sans, cursive;
-	color:white;
+	color:rgba(255, 255, 255, 0.877);
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 .welcome p {
@@ -140,50 +137,65 @@ text-decoration: none;
 	color:white;
 	padding-bottom: 20px	
 }
-.welcome #boton-abajo{
-	width:10%;
-	height:40px;
-	padding:5px;
-	background-color: var(--violeta);
-	color:white;
-	font: bold 16px Balsamiq Sans, cursive;
 
-	padding:6px;
-    border-radius: 24px;
-    transition: 0.3s;
+.welcome__btns{
+	width: 50%;
 }
 
-.welcome #boton-abajo:hover{
-	background-color: var(--rosa)
+.welcome__btns button{
+	background-color: transparent;
+	border: 2px  solid var(--blanco);
+	text-decoration: none;
+	padding:10px;
+	margin-left:20px;
+	color:white;
+	transition: 0.4s;
+}
+
+.welcome__btns button:hover{
+	color:tomato;
 }
 
 /*PORTAFOLIO*/
-.container-titulo{
- 	border:2px solid var(--violeta);
-    padding:10px;
-    text-align: center;
-    width: 30%;
-    margin: auto;
-    margin-top: 35px;
-    margin-bottom: 35px;
-
-}
-.container-titulo h2{
-   	font:bold 1.3em 'Fredericka the Great', cursive;
-    color: var(--violeta);
-    }
-
-
-
-
-img{
-	width:200px;
-}
 
 #portafolio{
-	display: flex;
+	padding:50px;
+	display:flex;
+	flex-direction: column;
+}
+.container-titulo{
+	width: 100%;
+	padding-bottom:70px;
 }
 
+.container-titulo h2{
+	font:bold 1.3em 'Fredericka the Great', cursive;
+    color: var(--violeta);
+ 	border:2px solid var(--violeta);
+    padding:20px;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+}
+
+.container-imgport{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.container-img{
+	width: 300px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+	height:300px;
+	overflow: hidden;
+	margin:20px auto;
+  }
+  
+  .container-img img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  }
 
 
 /*SERVICIOS*/
@@ -194,20 +206,16 @@ img{
 }
 
 .servicios-titulos{
-	margin-top: 130px;
 	height: 100px;
 	text-align: center;
-	font-size: 26px;
-
+	font-size: 26px; 
 	display: flex;
 	flex-direction: column;
 }
 
-
 .container-servicios{
 	width: 100%;
 	height: 20em;
-
 	display: flex;
 	justify-content: space-around;
 	align-items: flex-end;
@@ -236,6 +244,11 @@ img{
 	transform: translateY(-0.5rem) scale(1.0125);
 	box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
 }
+
+img{
+	width:200px;
+}
+
 
 /*PASOS A SEGUIR*/
 
@@ -332,161 +345,107 @@ img{
 
 .contacto{
 	width:100%;
-	height: 40em;
-	
-	background-image:url(imagenes/pinceles.jpg);
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("imagenes/pinceles.jpg");
 	background-attachment: fixed;
 	background-size: cover;
-	overflow: hidden;
-
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
-	flex-wrap: wrap;
-
 }
 
 .contenedor-contacto-izq{
-	width: 40%;
+	width: 30%;
 	height: 40em;
-
 	display: flex;
 	flex-direction: column;
-	align-items: space-around;
-
+	align-items: space-between;
 	position: relative;
-
 }
 
 .titulo-contacto{
-	align-self: flex-start;
-	width: 40%;
-	height: 3.5em;
-
-	position: absolute;
-	left:50px;
+	width: 50%;
+	padding:40px;
+	margin:auto;
+	text-align: center;
+	color:#f7f7f7;
 }
 
 .titulo-contacto h6 {
 	width: 100%;
-	font: 3em Balsamiq Sans, cursive;
-	color:white;
-	text-align: center;
-	margin: 20px 0;
+	font: var(--title) Balsamiq Sans, cursive;
+	margin: 10px 0; 
 }
 
+.contacto-contenido{
+	display:flex;
+	padding-bottom:100px;
+}
 .contacto-redesSociales{
-	width: 40%;
-	height: 300px;
-
+	width: 30%;
+	padding-left:50px;
 	display: flex;
 	flex-direction: column;
-
-	position: absolute;
-	bottom:200px;
-	left:20px;
+	justify-content:space-evenly;
+	color:white;
+	text-decoration: none;
 }
 .contacto-redesSociales i{
 	width: 60px;
  	height: 60px;
  	font-size: 40px;
  	line-height: 1.6;
-
- 	margin-bottom:30px;
-
 	text-align: center;
-	color:white;
 	background-color: var(--rosa);
-	
 	border-radius: 50%;
 	-webkit-box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
  	box-shadow:inset 0 0 15px 0 rgba(0,0,0,0.3);
-
 }
 
 .contacto-redesSociales i:hover{ background: var(--violeta);}
 
-.contacto-contenido{
-    width: 90%;
-    height: 500px;
-    margin:auto;
-    background: #fff;
-    padding:30px;
-    border-radius: 50px;
-    border: 1.5px solid var(--violeta);
-
+.container-form{
+	width:60%;
 }
 
-.formulario-contenido {
-	height: 500px;
-	width: 100%;
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-form{height: 500px}
-
-label{
-	font: bold 18px Balsamiq Sans, cursive;
- 	color:var(--violeta);
- 	margin: 30px 0px 10px 150px;} 
-
-
-input{
-	display: block;
-	color:var(--violeta);
-	width: 90%;
-    height: 40px;
-    margin:auto;
-    border-radius: 24px;
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
     outline: none;
-    border:1.5px solid var(--violeta);
+    border: 2px  solid var(--rosa);
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
     text-align: center;
-    font-size: 18px;
-    color: var(--black);
-	}
-
-textarea{
-	resize: none;
-	width:90%;
-	height: 150px;
-	margin:auto 15px;
-    border-radius: 24px;
-    border:1.5px solid var(--violeta);
-    outline:none;
+    padding: 14px 0;
 }
 
-textarea::placeholder{
-	font: 18px Balsamiq Sans, cursive;
-	padding: 0 15px;
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: tomato;
 }
-
-input::placeholder{
-	font: 18px Balsamiq Sans, cursive;
-	padding: 10px;
-}
-
-.mensaje-form{
-	text-align: center;
-	margin-top: 15px;
-}
-
-#envio{
-	width:40%;
-	height:40px;
-	padding:5px;
-	background-color: var(--violeta);
-	color:white;
-	font: bold 16px Balsamiq Sans, cursive;
-
-	padding:6px;
-    border-radius: 24px;
-}
-
-#envio:hover{
-	background-color: var(--rosa);
-	color:white;
-	transition: 0.3s;
-}
-
 
 
 
@@ -494,58 +453,13 @@ input::placeholder{
 footer{
 	width:100%;
 	height: 40px;
-	border-top:2px solid black;
+	border-top:2px solid var(--violeta);
 
 	font:italic 16px Arial;
-	color:black;
+	color:var(--violeta);
 	line-height: 2.5;
-	background: var(--violeta);
-	background-opacity: 0.2;
+	background: #f7f7f7;
 
 	display: flex;
 	justify-content: center;
-
 }
-
-
-/*RESPONSIVE*/
-
-/*@media only screen and (max-width:1000px){
-
-	.menu{display: block;}
-
-	.nav__ul {display: none;}
-
-	.nav__responsive-ul{
-		display: block;
-		
-		height: 300px;
-		width: 40%;
-		background: pink;
-
-	}
-
-	.nav__responsive-ul i {
-	padding:7px 20px;
-	font-size: 30px;
-	color:black;
-	box-sizing: border-box;
-
-	float:right;
-	}
-
-	.nav__responsive-li { list-style-type: none;}
-	
-	.nav__responsive-li a {
-	text-decoration: none;
-	font: bold 18px Balsamiq Sans, cursive;
- 	color:var(--violeta);
-	}
-
-	.nav__li-container{
-		position: relative;
-		top:100%;}
-
-	}
-
-}*/
