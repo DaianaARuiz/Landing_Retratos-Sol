@@ -22,6 +22,9 @@
 					<h1><a href="#" class="logo">RetratoSol</a></h1>
 				</div>
 
+				<div id="menu__icon">
+					<i class="fas fa-bars"></i>
+				</div>
 				<nav class="nav">
 						<ul class="nav__ul">
 							<li class="nav__li"><a href="#">Inicio</a></li>
@@ -30,17 +33,6 @@
 							<li class="nav__li"><a href="#instrucciones">Consultas</a></li>
 							<li class="nav__li"><a href="#contacto">Contacto</a></li>
 						</ul>
-
-							<!-- <ul class="nav__responsive-ul">
-								<i class="fas fa-bars"></i>
-								<div class="nav__li-container">
-									<li class="nav__responsive-li"><a href="#" class="activo">Inicio</a></li>
-									<li class="nav__responsive-li"><a href="#portafolio">Portafolio</a></li>
-									<li class="nav__responsive-li"><a href="#servicios">Servicios</a></li>
-									<li class="nav__responsive-li"><a href="#instrucciones">Consultas</a></li>
-									<li class="nav__responsive-li"><a href="#contacto">Contacto</a></li>
-								</div>
-							</ul> -->
 				</nav>
 			</div>
 		<!-- Fin de menu de navegacion -->	
@@ -106,6 +98,13 @@
 					</div>
 		</section>
 
+		<section id="overlay" class="overlay">
+			<div class="contenedor_img">
+				<button id="btn_cerrar_pop"><i class="fas fa-times"></i></button>
+				<img src="imagenes/15.jpg" alt="">
+			</div>
+		</section>
+
 		<!-- Servicios -->
 		<section class="servicios" id="servicios">
 
@@ -115,7 +114,8 @@
 			</div>
 
 			<div class="container-servicios">
-				<div class="contenedor-retratoNegro">
+
+				<article class="contenedor-retratoNegro">
 					
 					<div class="servicios__p">
 						<p style="font-weight:bold; font-size: 20px;margin-bottom:15px; "> Retratos a lapiz blanco y negro</p>
@@ -125,9 +125,9 @@
 					<div class="servicios__img">
 						<img src="imagenes/0.jpg" alt="retrato0">
 					</div>
-				</div>
+				</article>
 
-				<div class="contenedor-retratoColor">
+				<article class="contenedor-retratoColor">
 					
 					<div class="servicios__p">
 						<p style="font-weight:bold; font-size: 20px;margin-bottom:15px; ">Retratos con lapices de colores</p>
@@ -138,7 +138,7 @@
 						<img src="imagenes/4.jpg" alt="retrato4">
 					
 					</div>
-				</div>
+				</article>
 			</div>
 		</section>
 		<!-- pasos a seguir -->
@@ -226,5 +226,6 @@
 	<!-- scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script src="https://kit.fontawesome.com/601bc41129.js" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
