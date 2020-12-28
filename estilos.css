@@ -28,7 +28,9 @@
  	background: var(--blanco);
     font-family: 'Raleway', sans-serif;
  }
-
+html{
+	scroll-behavior: smooth;
+}
 
  .menu{
  	position:fixed;
